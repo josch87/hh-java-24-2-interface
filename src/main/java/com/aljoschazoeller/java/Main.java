@@ -4,12 +4,11 @@ public class Main {
     public static void main(String[] args) {
         MediaController mediaController = new MediaController();
 
-        MusicPlayer music = new MusicPlayer();
-        VideoPlayer video = new VideoPlayer();
+        Playable music = new MusicPlayer();
+        Playable video = new VideoPlayer();
 
-        mediaController.playMedia(music);
-        mediaController.playMedia(video);
+        Playable userInput = music;
 
-
+        mediaController.playMedia(userInput);
     }
 }
